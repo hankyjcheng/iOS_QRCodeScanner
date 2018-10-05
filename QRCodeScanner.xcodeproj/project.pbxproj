@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7719C876216324D7008438F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7719C875216324D7008438F5 /* AppDelegate.swift */; };
-		7719C878216324D7008438F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7719C877216324D7008438F5 /* ViewController.swift */; };
+		7719C878216324D7008438F5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7719C877216324D7008438F5 /* MainViewController.swift */; };
 		7719C87B216324D7008438F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7719C879216324D7008438F5 /* Main.storyboard */; };
 		7719C87D216324D9008438F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7719C87C216324D9008438F5 /* Assets.xcassets */; };
 		7719C880216324D9008438F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7719C87E216324D9008438F5 /* LaunchScreen.storyboard */; };
 		7719C88B216324D9008438F5 /* QRCodeScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7719C88A216324D9008438F5 /* QRCodeScannerTests.swift */; };
 		7719C896216324D9008438F5 /* QRCodeScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7719C895216324D9008438F5 /* QRCodeScannerUITests.swift */; };
+		7719C8A521647FB4008438F5 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7719C8A421647FB4008438F5 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		7719C872216324D7008438F5 /* QRCodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCodeScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7719C875216324D7008438F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7719C877216324D7008438F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7719C877216324D7008438F5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7719C87A216324D7008438F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7719C87C216324D9008438F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7719C87F216324D9008438F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		7719C891216324D9008438F5 /* QRCodeScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7719C895216324D9008438F5 /* QRCodeScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerUITests.swift; sourceTree = "<group>"; };
 		7719C897216324D9008438F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7719C8A421647FB4008438F5 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,8 @@
 		7719C874216324D7008438F5 /* QRCodeScanner */ = {
 			isa = PBXGroup;
 			children = (
+				7719C8A321647F8D008438F5 /* viewcontroller */,
 				7719C875216324D7008438F5 /* AppDelegate.swift */,
-				7719C877216324D7008438F5 /* ViewController.swift */,
 				7719C879216324D7008438F5 /* Main.storyboard */,
 				7719C87C216324D9008438F5 /* Assets.xcassets */,
 				7719C87E216324D9008438F5 /* LaunchScreen.storyboard */,
@@ -123,6 +125,15 @@
 				7719C897216324D9008438F5 /* Info.plist */,
 			);
 			path = QRCodeScannerUITests;
+			sourceTree = "<group>";
+		};
+		7719C8A321647F8D008438F5 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				7719C877216324D7008438F5 /* MainViewController.swift */,
+				7719C8A421647FB4008438F5 /* CameraViewController.swift */,
+			);
+			path = viewcontroller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7719C878216324D7008438F5 /* ViewController.swift in Sources */,
+				7719C878216324D7008438F5 /* MainViewController.swift in Sources */,
 				7719C876216324D7008438F5 /* AppDelegate.swift in Sources */,
+				7719C8A521647FB4008438F5 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,8 +442,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8X938K32QX;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = CT33F4M292;
 				INFOPLIST_FILE = QRCodeScanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -439,6 +451,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hankyjcheng.QRCodeScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "iOS Development Wildcard App";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,8 +461,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8X938K32QX;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = CT33F4M292;
 				INFOPLIST_FILE = QRCodeScanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,6 +470,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hankyjcheng.QRCodeScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "iOS Development Wildcard App";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
