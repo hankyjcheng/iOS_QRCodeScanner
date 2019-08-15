@@ -198,6 +198,9 @@
 		7719C86A216324D7008438F5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Hank Cheng";
@@ -445,6 +448,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = CT33F4M292;
 				INFOPLIST_FILE = QRCodeScanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +468,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = CT33F4M292;
 				INFOPLIST_FILE = QRCodeScanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
